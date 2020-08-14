@@ -1,0 +1,10 @@
+{
+  "TargetVersion": "0.1",
+  "PixelatedBase": false,
+  "PixelatedReflections": false,
+  "PixelatedNormal": false,
+  "PixelatedShininess": false,
+  "PixelatedBrush": false,
+  "PixelatedBrushIntensity": false,
+  "NormalizeNormal": true
+}
