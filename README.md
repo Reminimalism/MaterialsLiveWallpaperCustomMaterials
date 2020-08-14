@@ -51,4 +51,16 @@ As an example, see [CircularBrush.zip](https://github.com/Reminimalism/Materials
 
 ## Config (config.json)
 
-TODO
+There are these optional fields to set:
+
+  - TargetVersion: The version name of the target version.
+  - Pixelated<texture-name>: Whether the pixels of a low res texture should be rendered as squares. This is the full list:
+    - PixelatedBase
+    - PixelatedReflections
+    - PixelatedNormal
+    - PixelatedShininess
+    - PixelatedBrush
+    - PixelatedBrushIntensity
+  - NormalizeNormal: Whether to normalize the normal map in the shader.
+
+See sample_config.json as an example. Note that the name of this file in the zip should exactly be "config.json".
