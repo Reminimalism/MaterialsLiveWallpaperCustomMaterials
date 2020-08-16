@@ -4,10 +4,15 @@ Some material samples that can be imported to [Materials Live Wallpaper](https:/
 
 # More Materials
 
-  - **ColorfulCircularBrush:** generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
-    - [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_1024x1024.zip)
-    - [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
-    - [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
+## Colorful Circular Brush:
+
+4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
+
+Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
+
+  - [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_1024x1024.zip)
+  - [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
+  - [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
 
 # How to create a Custom Material
 
@@ -66,7 +71,8 @@ Default behavior when brush intensity texture is not included: A texture filled 
 As an example, see [CircularBrush.zip](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/Materials/CircularBrush.zip)
 or [ColorfulCircularBrush_4096x4096.zip](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_4096x4096.zip).
 
-## Config (config.json)
+## Config
+File name: `config.json`
 
 There are these optional fields to set:
 
@@ -80,7 +86,8 @@ There are these optional fields to set:
     - PixelatedBrushIntensity
   - NormalizeNormal: Whether to normalize the normal map in the shader.
 
-See sample_config.json as an example. Note that the name of this file in the zip should exactly be "config.json".
+See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/blob/master/sample_config.json) as an example.
+Note that the name of this file in the zip should exactly be `config.json`.
 
 # Layers
 
@@ -94,9 +101,9 @@ Avoid bright base and reflections for the additional layers to prevent an overex
 
 # Changelog
 
-- 0.1:
-  - Default base and reflection textures are gray.
-
 - 0.2:
   - Added layers support
-  - Not including the base or reflection textures results in a behavior like they are black (don't exist).
+  - Not including the base or reflections textures results in a behavior like the missing ones are black (don't exist).
+
+- 0.1:
+  - Default base and reflections textures are gray.
