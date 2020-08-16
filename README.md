@@ -2,6 +2,13 @@
 
 Some material samples that can be imported to [Materials Live Wallpaper](https://github.com/Reminimalism/MaterialsLiveWallpaper)
 
+# More Materials
+
+  - **ColorfulCircularBrush:** generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
+    - [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_1024x1024.zip)
+    - [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
+    - [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
+
 # How to create a Custom Material
 
 Create a zip file containing these optional files:
