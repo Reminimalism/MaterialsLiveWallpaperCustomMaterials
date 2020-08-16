@@ -6,7 +6,7 @@ Some material samples that can be imported to [Materials Live Wallpaper](https:/
 
 Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/) to download.
 
-## Colorful Circular Brush:
+## Colorful Circular Brush
 
 4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
 
