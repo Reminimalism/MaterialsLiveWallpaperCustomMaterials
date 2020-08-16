@@ -95,7 +95,7 @@ Additional layers of each texture can be added to create global illumination or 
 Maximum allowed number of additional layers is 4.
 Each layer's file is named like this (1 ≤ number ≤ 4): `<texture-name><layer-number>.<image-format>`
 
-For example: `base1.png`, `reflections1.png`, `normal1.png`, `reflections2.png`, `brush2.png`, `brush_intensity2.png`
+For example: `base1.png`, `reflections1.png`, `normal1.png`, `shininess1.png`, `reflections2.png`, `brush2.png`, `brush_intensity2.png`
 
 Avoid bright base and reflections for the additional layers to prevent an overexposed look.
 
