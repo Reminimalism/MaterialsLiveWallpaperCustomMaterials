@@ -4,15 +4,13 @@ Some material samples that can be imported to [Materials Live Wallpaper](https:/
 
 # More Materials
 
+Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/) to download.
+
 ## Colorful Circular Brush:
 
 4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
 
 Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
-
-  - [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_1024x1024.zip)
-  - [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
-  - [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_2048x2048.zip)
 
 # How to create a Custom Material
 
@@ -68,8 +66,8 @@ This is used to have more precise brushes, by using more ranges in the brush tex
 
 Default behavior when brush intensity texture is not included: A texture filled with (255, 255, 255) or #FFFFFF, or 255 or #FF grayscale value (1 coefficient).
 
-As an example, see [CircularBrush.zip](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/Materials/CircularBrush.zip)
-or [ColorfulCircularBrush_4096x4096.zip](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/raw/master/More%20Materials/ColorfulCircularBrush_4096x4096.zip).
+As an example, see `CircularBrush.zip` located in `DefaultMaterials.zip` or one of `ColorfulCircularBrush_<resolution>.zip`,
+available in [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/).
 
 ## Config
 File name: `config.json`
