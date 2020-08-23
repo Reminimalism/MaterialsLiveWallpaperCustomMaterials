@@ -5,6 +5,7 @@ import random
 
 Size = 4096
 NoiseRadius = 8
+NoiseCountPerPixel = 1
 
 
 # progress display
@@ -39,7 +40,7 @@ def progress_update(progress):
 
 noise = []
 
-for i in range(Size):
+for i in range(int(Size * NoiseCountPerPixel)):
     noise.append(random.random() * NoiseRadius * 2 - NoiseRadius)
 
 max_color = 255 - NoiseRadius
@@ -67,7 +68,7 @@ for y in range(0, Size):
         u = float(x) / size_center - 1
         v = -float(y) / size_center + 1
         l = math.sqrt(u * u + v * v)
-        offset_index_f = abs(l) * (Size / 2)
+        offset_index_f = abs(l) * (Size / 2) * NoiseCountPerPixel
         offset_index = int(offset_index_f)
         offset = noise[offset_index] + (offset_index_f - offset_index) * (noise[offset_index + 1] - noise[offset_index])
         if l < phase1:
