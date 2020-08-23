@@ -27,9 +27,9 @@ def progress_update(progress):
     global progress_remaining_milestones
     if progress >= progress_threshold:
         if progress_threshold != 0:
-            print(progress_character, end="")
+            print(progress_character, end="", flush=True)
         if len(progress_remaining_milestones) > 0 and progress >= progress_remaining_milestones[0][0]:
-            print(progress_remaining_milestones[0][1], end="")
+            print(progress_remaining_milestones[0][1], end="", flush=True)
             progress_remaining_milestones.pop(0)
         progress_threshold += progress_step
 
@@ -37,7 +37,7 @@ def progress_update(progress):
 
 size_center = float(Size) / 2 - 0.5
 img = Image.new('RGB', (Size, Size))
-print("Progress: ", end="")
+print("Progress: ", end="", flush=True)
 for y in range(0, Size):
     progress_update(float(y) / Size)
     for x in range(0, Size):
