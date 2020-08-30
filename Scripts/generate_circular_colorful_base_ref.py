@@ -68,9 +68,18 @@ pixel_amount = half_pixel_amount * 2
 phase_size = 0.25
 last_phase = 3
 phase_aa_ranges = [
-    (0.25 - half_pixel_amount, 0.25, 0.25 + half_pixel_amount),
-    (0.5 - half_pixel_amount, 0.5, 0.5 + half_pixel_amount),
-    (0.75 - half_pixel_amount, 0.75, 0.75 + half_pixel_amount)
+    (0.25 - half_pixel_amount, 0.25 + half_pixel_amount),
+    (0.5 - half_pixel_amount, 0.5 + half_pixel_amount),
+    (0.75 - half_pixel_amount, 0.75 + half_pixel_amount)
+]
+phase_fix_points = [
+    0,
+    phase_aa_ranges[0][1],
+    phase_aa_ranges[1][1],
+    phase_aa_ranges[2][1],
+
+    phase_aa_ranges[2][1],
+    phase_aa_ranges[2][1]
 ]
 
 def lerp(color_a : tuple, color_b : tuple, t : float):
@@ -98,12 +107,13 @@ for y in range(0, Size):
         offset = noise[offset_index] + (offset_index_f - offset_index) * (noise[offset_index + 1] - noise[offset_index])
 
         phase_index = int(l / phase_size)
+        if l < phase_fix_points[phase_index]:
+            phase_index -= 1
+
         if phase_index >= last_phase:
             phase_index = last_phase
             phase_aa = 0
-        elif phase_aa_ranges[phase_index][0] <= l < phase_aa_ranges[phase_index][2]:
-            if phase_aa_ranges[phase_index][1] <= l:
-                phase_index -= 1
+        elif phase_aa_ranges[phase_index][0] <= l < phase_aa_ranges[phase_index][1]:
             phase_aa = (l - phase_aa_ranges[phase_index][0]) / pixel_amount
         else:
             phase_aa = 0
