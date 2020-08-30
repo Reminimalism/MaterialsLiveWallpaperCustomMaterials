@@ -96,7 +96,8 @@ for y in range(0, Size):
             b_g = r_g = aa(phase3, l, 64, 128) + offset
             b_b = aa(phase3, l, 96, 128) + offset; r_b = aa(phase3, l, max_color, 128) + offset
         else:
-            b_r = b_g = b_b = r_r = r_g = r_b = 128 + offset
+            b_r = b_g = b_b = 96 + offset
+            r_r = r_g = r_b = max_color + offset
 
         base       .putpixel((x, y), (int(b_r), int(b_g), int(b_b)))
         reflections.putpixel((x, y), (int(r_r), int(r_g), int(r_b)))
