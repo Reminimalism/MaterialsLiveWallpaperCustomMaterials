@@ -7,6 +7,25 @@ Size = 4096
 NoiseRadius = 8
 NoiseCountPerPixel = 1
 
+max_color = 255 - NoiseRadius
+
+RGBBaseColors = [
+    (96, 32, 64),
+    (32, 96, 64),
+    (32, 64, 96),
+    (96, 96, 96)
+]
+
+RGBReflectionsColors = [
+    (max_color, 32, 64),
+    (32, max_color, 64),
+    (32, 64, max_color),
+    (max_color, max_color, max_color)
+]
+
+BaseColors = RGBBaseColors
+ReflectionsColors = RGBReflectionsColors
+
 
 # progress display
 
@@ -43,20 +62,26 @@ noise = []
 for i in range(int(Size * NoiseCountPerPixel)):
     noise.append(random.random() * NoiseRadius * 2 - NoiseRadius)
 
-max_color = 255 - NoiseRadius
 half_pixel_amount = 1.0 / Size
 pixel_amount = half_pixel_amount * 2
 
-phase1 = 0.25 - half_pixel_amount
-phase1aa = 0.25 + half_pixel_amount
-phase2 = 0.5 - half_pixel_amount
-phase2aa = 0.5 + half_pixel_amount
-phase3 = 0.75 - half_pixel_amount
-phase3aa = 0.75 + half_pixel_amount
+phase_size = 0.25
+last_phase = 3
+phase_aa_ranges = [
+    (0.25 - half_pixel_amount, 0.25, 0.25 + half_pixel_amount),
+    (0.5 - half_pixel_amount, 0.5, 0.5 + half_pixel_amount),
+    (0.75 - half_pixel_amount, 0.75, 0.75 + half_pixel_amount)
+]
 
-def aa(prev_phase, l, prev_color, next_color):
-    global pixel_amount
-    return prev_color + ((l - prev_phase) / pixel_amount) * (next_color - prev_color)
+def lerp(color_a : tuple, color_b : tuple, t : float):
+    return (
+        color_a[0] + (color_b[0] - color_a[0]) * t,
+        color_a[1] + (color_b[1] - color_a[1]) * t,
+        color_a[2] + (color_b[2] - color_a[2]) * t
+    )
+
+def add_color_num(color : tuple, number : float):
+    return (color[0] + number, color[1] + number, color[2] + number)
 
 size_center = float(Size) / 2 - 0.5
 base = Image.new('RGB', (Size, Size))
@@ -71,36 +96,33 @@ for y in range(0, Size):
         offset_index_f = abs(l) * (Size / 2) * NoiseCountPerPixel
         offset_index = int(offset_index_f)
         offset = noise[offset_index] + (offset_index_f - offset_index) * (noise[offset_index + 1] - noise[offset_index])
-        if l < phase1:
-            b_r = 96 + offset; r_r = max_color + offset
-            b_g = r_g = 32 + offset
-            b_b = r_b = 64 + offset
-        elif l < phase1aa:
-            b_r = aa(phase1, l, 96, 32) + offset; r_r = aa(phase1, l, max_color, 32) + offset
-            b_g = aa(phase1, l, 32, 96) + offset; r_g = aa(phase1, l, 32, max_color) + offset
-            b_b = r_b = 64 + offset
-        elif l < phase2:
-            b_r = r_r = 32 + offset
-            b_g = 96 + offset; r_g = max_color + offset
-            b_b = r_b = 64 + offset
-        elif l < phase2aa:
-            b_r = r_r = 32 + offset
-            b_g = aa(phase2, l, 96, 64) + offset; r_g = aa(phase2, l, max_color, 64) + offset
-            b_b = aa(phase2, l, 64, 96) + offset; r_b = aa(phase2, l, 64, max_color) + offset
-        elif l < phase3:
-            b_r = r_r = 32 + offset
-            b_g = r_g = 64 + offset
-            b_b = 96 + offset; r_b = max_color + offset
-        elif l < phase3aa:
-            b_r = r_r = aa(phase3, l, 32, 128) + offset
-            b_g = r_g = aa(phase3, l, 64, 128) + offset
-            b_b = aa(phase3, l, 96, 128) + offset; r_b = aa(phase3, l, max_color, 128) + offset
-        else:
-            b_r = b_g = b_b = 96 + offset
-            r_r = r_g = r_b = max_color + offset
 
-        base       .putpixel((x, y), (int(b_r), int(b_g), int(b_b)))
-        reflections.putpixel((x, y), (int(r_r), int(r_g), int(r_b)))
+        phase_index = int(l / phase_size)
+        if phase_index >= last_phase:
+            phase_index = last_phase
+            phase_aa = 0
+        elif phase_aa_ranges[phase_index][0] <= l < phase_aa_ranges[phase_index][2]:
+            if phase_aa_ranges[phase_index][1] <= l:
+                phase_index -= 1
+            phase_aa = (l - phase_aa_ranges[phase_index][0]) / pixel_amount
+        else:
+            phase_aa = 0
+
+        if phase_aa == 0:
+            base_color = BaseColors[phase_index]
+            refl_color = ReflectionsColors[phase_index]
+        else:
+            base_color = lerp(BaseColors[phase_index], BaseColors[phase_index + 1], phase_aa)
+            refl_color = lerp(ReflectionsColors[phase_index], ReflectionsColors[phase_index + 1], phase_aa)
+
+        base_color = add_color_num(base_color, offset)
+        refl_color = add_color_num(refl_color, offset)
+
+        base_color = (int(base_color[0]), int(base_color[1]), int(base_color[2]), )
+        refl_color = (int(refl_color[0]), int(refl_color[1]), int(refl_color[2]), )
+
+        base       .putpixel((x, y), base_color)
+        reflections.putpixel((x, y), refl_color)
 progress_update(1)
 print()
 base.save("base.png")
