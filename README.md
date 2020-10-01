@@ -6,15 +6,15 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
 Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/) to download.
 
-## Colorful Circular Brush
+-  Colorful Circular Brush
 
-4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
+    4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
 
-Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
+    Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
 
-## Glitter
+- Glitter
 
-TODO
+    TODO
 
 # How to create a Custom Material
 
