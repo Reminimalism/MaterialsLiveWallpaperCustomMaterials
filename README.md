@@ -1,8 +1,8 @@
-# Material Samples for Materials Live Wallpaper
+# Custom Materials for Materials Live Wallpaper
 
-Some material samples that can be imported to [Materials Live Wallpaper](https://github.com/Reminimalism/MaterialsLiveWallpaper)
+Materials that can be imported to [Materials Live Wallpaper](https://github.com/Reminimalism/MaterialsLiveWallpaper)
 
-# More Materials
+# Samples
 
 Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/) to download.
 
@@ -11,6 +11,10 @@ Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaper
 4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
 
 Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
+
+## Glitter
+
+TODO
 
 # How to create a Custom Material
 
