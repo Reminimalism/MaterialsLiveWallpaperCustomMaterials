@@ -4,7 +4,7 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
 # Samples
 
-Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/) to download.
+Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/) to download.
 
 -  Colorful Circular Brush
 
@@ -37,7 +37,7 @@ Make sure that the sum of base and reflections color at each point is less than 
 Default behavior when reflections texture is not included: Black texture.
 
 ## Normal texture
-File name: `normal.<image-format>`, for `example normal.png`
+File name: `normal.<image-format>`, for example `normal.png`
 
 An image file that represents the normal vector at each point.
 Red represents x, Green represents y, Blue represents z. 0 is -1, 128 or 127 is 0, and 255 is 1.
@@ -58,7 +58,7 @@ An image file representing brush direction and magnitude at different points.
 The brush effect doesn't expand the reflection radius, it shrinks it in a specific direction, so try to use less shininess values in the brushed areas.
 Red represents x, Green represents y, Blue represents z.
 0 is almost -1 (-1.003921569), 128 is exactly 0, and 255 is almost 1 (0.996078431).
-It is recommended to use 128 - 127 = 1 as -1, and 128 + 127 = 255 as 1.
+It is recommended to use 1 (= 128 - 127) as -1, and 255 (= 128 + 127) as 1.
 
 Default behavior when brush texture is not included: A texture filled with (128, 128, 128) or #808080 (0 vector).
 
@@ -71,7 +71,7 @@ This is used to have more precise brushes, by using more ranges in the brush tex
 Default behavior when brush intensity texture is not included: A texture filled with (255, 255, 255) or #FFFFFF, or 255 or #FF grayscale value (1 coefficient).
 
 As an example, see `CircularBrush.zip` located in `DefaultMaterials.zip` or one of `ColorfulCircularBrush_<resolution>.zip`,
-available in [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/releases/).
+available in [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/).
 
 ## Config
 File name: `config.json`
@@ -88,18 +88,23 @@ There are these optional fields to set:
     - PixelatedBrushIntensity
   - NormalizeNormal: Whether to normalize the normal map in the shader.
 
-See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperMaterialSamples/blob/master/sample_config.json) as an example.
+See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/blob/master/sample_config.json) as an example.
 Note that the name of this file in the zip should exactly be `config.json`.
 
 # Layers
 
 Additional layers of each texture can be added to create global illumination or other effects.
-Maximum allowed number of additional layers is 4.
-Each layer's file is named like this (1 ≤ number ≤ 4): `<texture-name><layer-number>.<image-format>`
+Maximum allowed number of additional layers is 4, and the default is 2 from v0.4.
+Each additional layer's file is named like this (1 ≤ number ≤ 4): `<texture-name><layer-number>.<image-format>`
 
-For example: `base1.png`, `reflections1.png`, `normal1.png`, `shininess1.png`, `reflections2.png`, `brush2.png`, `brush_intensity2.png`
+For example: `base.png`, `reflections.png`, `base1.png`, `reflections1.png`, `normal1.png`, `shininess1.png`, `reflections2.png`, `brush2.png`, `brush_intensity2.png`
 
 Avoid bright base and reflections for the additional layers to prevent an overexposed look.
+The blending mode used is additive, that means the resulting color in a pixel is the sum of all the colors in all layers in that pixel.
+
+User might allow a limited number of additional layers or turn them off, so prioritize on what to put in the main layer and the additional layers.
+The main layer (rendered from the files without numbers) is always shown.
+For additional layers, the less the layer's number, the more likely it's going to be shown.
 
 # Changelog
 
