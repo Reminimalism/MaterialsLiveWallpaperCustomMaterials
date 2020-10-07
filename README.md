@@ -14,7 +14,7 @@ Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaper
 
 - Glitter
 
-    TODO
+    Generated using `generate_glitter.py` script.
 
 # How to create a Custom Material
 
@@ -102,7 +102,7 @@ For example: `base.png`, `reflections.png`, `base1.png`, `reflections1.png`, `no
 Avoid bright base and reflections for the additional layers to prevent an overexposed look.
 The blending mode used is additive, that means the resulting color in a pixel is the sum of all the colors in all layers in that pixel.
 
-User might allow a limited number of additional layers or turn them off, so prioritize on what to put in the main layer and the additional layers.
+Users might allow a limited number of additional layers or turn them off, so prioritize on what to put in the main layer and the additional layers.
 The main layer (rendered from the files without numbers) is always shown.
 For additional layers, the less the layer's number, the more likely it's going to be shown.
 
