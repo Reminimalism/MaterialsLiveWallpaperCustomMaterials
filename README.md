@@ -12,9 +12,40 @@ Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaper
 
     Generated using `generate_circular_brush.py`, `generate_circular_colorful_base_ref.py` and `generate_circular_colorful_others.py` scripts.
 
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/ColorfulCircularBrush_1024x1024.zip),
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/ColorfulCircularBrush_2048x2048.zip),
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/ColorfulCircularBrush_4096x4096.zip)
+
 - Glitter
 
     Generated using `generate_glitter.py` script.
+
+    512x512 is recommended for most screen resolutions.
+    All glitter variations have 5 layers (4 additional layers),
+    you can reduce them by setting the Max Allowed Additional Layers in the app settings if it runs slow or drains battery.
+    Only glitter materials with black backgrounds are (almost) compatible with v0.1.
+
+    Dark gray background and RGB & white glitters:
+    [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_DarkGray_RGB.zip),
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_DarkGray_RGB.zip)
+
+    Gray background and RGB & white glitters:
+    [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_Gray_RGB.zip),
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_Gray_RGB.zip)
+
+    Black background and RGB & white glitters:
+    [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_Black_RGB.zip),
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_Black_RGB.zip)
+
+    Dark gray background and Reminimalism colors & white glitters:
+    [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_DarkGray_ReminimalismColors.zip),
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_DarkGray_ReminimalismColors.zip)
+
+- Default Materials
+
+    The samples offered in the app.
+
+    [Download zip (4096x4096)](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/DefaultMaterials.zip)
 
 # How to create a Custom Material
 
