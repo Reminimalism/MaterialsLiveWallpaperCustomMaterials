@@ -4,7 +4,7 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
 # Samples
 
--  Colorful Circular Brush
+-  **Colorful Circular Brush**
 
     4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
 
@@ -14,7 +14,7 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
     [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/ColorfulCircularBrush_2048x2048.zip),
     [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/ColorfulCircularBrush_4096x4096.zip)
 
-- Glitter
+- **Glitter**
 
     Generated using `generate_glitter.py` script.
 
@@ -39,9 +39,9 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
     [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_DarkGray_ReminimalismColors.zip),
     [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_DarkGray_ReminimalismColors.zip)
 
-- Default Materials
+- **Default Materials**
 
-    The samples offered in the app.
+    The samples that are included in the app.
 
     [Download zip (4096x4096)](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/DefaultMaterials.zip)
 
