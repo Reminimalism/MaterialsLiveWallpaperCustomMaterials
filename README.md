@@ -4,8 +4,6 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
 # Samples
 
-Go to the [releases page](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/) to download.
-
 -  Colorful Circular Brush
 
     4 circles with red, green, blue and silver colors with a natural looking brush texture and visible edges.
@@ -102,7 +100,7 @@ This is used to have more precise brushes, by using more ranges in the brush tex
 Default behavior when brush intensity texture is not included: A texture filled with (255, 255, 255) or #FFFFFF, or 255 or #FF grayscale value (1 coefficient).
 
 As an example, see `CircularBrush.zip` located in `DefaultMaterials.zip` or one of `ColorfulCircularBrush_<resolution>.zip`,
-available in [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/).
+available in [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/) and [samples section](#samples).
 
 ## Config
 File name: `config.json`
