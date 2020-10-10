@@ -39,6 +39,18 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
     [Download 512x512](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_512x512_DarkGray_ReminimalismColors.zip),
     [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/Glitter_1024x1024_DarkGray_ReminimalismColors.zip)
 
+- **Hologram Label**
+
+    The hologram label rainbow reflections.
+
+    Generated using `generate_hologram_label_main.py` and `generate_hologram_label_others.py` scripts.
+
+    This material has 5 layers (4 additional layers), the more layers you allow, the more complete the rainbow is going to be!
+
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.10/HologramLabel_1024x1024.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.10/HologramLabel_2048x2048.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.10/HologramLabel_4096x4096.zip)
+
 - **Default Materials**
 
     The samples that are included in the app.
