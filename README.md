@@ -91,6 +91,12 @@ There are these optional fields to set:
 See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/blob/master/sample_config.json) as an example.
 Note that the name of this file in the zip should exactly be `config.json`.
 
+# Resolutions and aspect ratios
+
+Please use 1:1 aspect ratio (width=height) in all of the images, this is to support both portrait and landscape view without rotating the textures 90 degrees.
+Images can have different resolutions, they will be stretched to match the square, it is recommended to use resolutions that are powers of 2, for example 2048x2048.
+If the result is not intended to look pixelated, 2048x2048 is enough for 1080p displays, and almost fine for 1440p, 4096x4096 is enough for 4K and 1440p, 1024x1024 is almost fine for 720p.
+
 # Layers
 
 Additional layers of each texture can be added to create global illumination or other effects.
