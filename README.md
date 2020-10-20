@@ -51,6 +51,24 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
     [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.10/HologramLabel_2048x2048.zip)
     [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.10/HologramLabel_4096x4096.zip)
 
+- **Wave Pattern**
+
+    Wave brush pattern.
+
+    Generated using `generate_wave_pattern.py` script.
+
+    Try the lower resolutions too!
+
+    4px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_1024x1024_4pxLines.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_2048x2048_4pxLines.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_4096x4096_4pxLines.zip)
+
+    8px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_1024x1024_8pxLines.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_2048x2048_8pxLines.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_4096x4096_8pxLines.zip)
+
 - **Default Materials**
 
     The samples that are included in the app.
