@@ -7,7 +7,7 @@ Size = 4096
 
 WavesCount = 4
 ReverseCosine = True
-MaxSlope = 1
+MaxSlope = 0.5
 BrushLinesWidthInPixels = 4
 
 BaseDeepColor = 120
