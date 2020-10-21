@@ -56,7 +56,7 @@ def progress_update(progress):
 pixel_amount = 1.0 / Size
 
 wave_cos_t_c = math.pi * 2 * WavesCount
-wave_cos_c = (1.0 / wave_cos_t_c) * (MaxSlope / 2.0)
+wave_cos_c = (1.0 / wave_cos_t_c) * MaxSlope
 if ReverseCosine:
     wave_cos_c = -wave_cos_c
     wave_sin_c = MaxSlope
