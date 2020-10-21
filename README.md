@@ -59,15 +59,25 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
     Try the lower resolutions too!
 
-    4px brush lines:
-    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_1024x1024_4pxLines.zip)
-    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_2048x2048_4pxLines.zip)
-    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_4096x4096_4pxLines.zip)
+    Soft half-slope waves, 4px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_4px_1024x1024.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_4px_2048x2048.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_4px_4096x4096.zip)
 
-    8px brush lines:
-    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_1024x1024_8pxLines.zip)
-    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_2048x2048_8pxLines.zip)
-    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.20/WavePattern_4096x4096_8pxLines.zip)
+    Soft half-slope waves, 8px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_8px_1024x1024.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_8px_2048x2048.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_HalfSlope_8px_4096x4096.zip)
+
+    1-slope waves, 4px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_4px_1024x1024.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_4px_2048x2048.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_4px_4096x4096.zip)
+
+    1-slope waves, 8px brush lines:
+    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_8px_1024x1024.zip)
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_8px_2048x2048.zip)
+    [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.10.21/WavePattern_1Slope_8px_4096x4096.zip)
 
 - **Default Materials**
 
