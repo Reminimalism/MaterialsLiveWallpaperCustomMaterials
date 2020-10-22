@@ -94,8 +94,8 @@ for x in range(0, Size):
     bm = math.sqrt(bx * bx + by * by)
     brush_vector = (bx / bm, by / bm)
     brush_color = (
-        int(128 + brush_vector[0] * 127),
-        int(128 + brush_vector[1] * 127),
+        round(128 + brush_vector[0] * 127),
+        round(128 + brush_vector[1] * 127),
         128
     )
 
@@ -110,13 +110,13 @@ for x in range(0, Size):
         h = math.cos(v_w * lines_cos_t_c)
         dh_for_normal = math.sin(v_w * lines_cos_t_c)
 
-        base.putpixel((x, y), (int(BaseDeepColor + h * base_high_color_offset)))
-        reflections.putpixel((x, y), (int(ReflectionsDeepColor + h * refl_high_color_offset)))
+        base.putpixel((x, y), (round(BaseDeepColor + h * base_high_color_offset)))
+        reflections.putpixel((x, y), (round(ReflectionsDeepColor + h * refl_high_color_offset)))
         brush.putpixel((x, y), brush_color)
 
         normal.putpixel((x, y), (
-            int(127.5 + 127.5 * normal_offset[0] * dh_for_normal * NormalIntensity),
-            int(127.5 + 127.5 * normal_offset[1] * dh_for_normal * NormalIntensity),
+            round(127.5 + 127.5 * normal_offset[0] * dh_for_normal * NormalIntensity),
+            round(127.5 + 127.5 * normal_offset[1] * dh_for_normal * NormalIntensity),
             255
         ))
 progress_update(1)
