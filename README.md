@@ -92,7 +92,7 @@ Create a zip file containing these optional files:
 ## Base color texture a.k.a. Diffuse map
 File name: `base.<image-format>`, for example `base.png`
 
-An image file representing the colors of the materials. Aka diffuse map.
+An image file representing the base colors. Also known as diffuse map.
 
 Default behavior when base texture is not included: Black texture.
 
@@ -100,7 +100,7 @@ Default behavior when base texture is not included: Black texture.
 File name: `reflections.<image-format>`, for example `reflections.png`
 
 An image file representing the color (filter) of reflections in different points.
-Black color reflects no light, white reflects any light with max brightness, red reflects only red lights.
+Black color reflects no light, white reflects any light with max brightness, red only reflects the red hue of the lights.
 Make sure that the sum of base and reflections color at each point is less than or equal to white color.
 
 Default behavior when reflections texture is not included: Black texture.
@@ -109,7 +109,10 @@ Default behavior when reflections texture is not included: Black texture.
 File name: `normal.<image-format>`, for example `normal.png`
 
 An image file that represents the normal vector at each point.
-Red represents x, Green represents y, Blue represents z. 0 is -1, 128 or 127 is 0, and 255 is 1.
+Normal vector shows what direction the surface is facing.
+The y axis is the phone's up direction, x is its right direction and z points to its front (screen) direction, same for Brush texture's x, y and z.
+Red represents x, Green represents y, Blue represents z.
+0 value translates to -1, 128 or 127 to 0, and 255 to 1.
 
 Default behavior when normal texture is not included: A texture filled with (128, 128, 255) or #8080FF (forward direction).
 
@@ -117,6 +120,7 @@ Default behavior when normal texture is not included: A texture filled with (128
 File name: `shininess.<image-format>`, for example `shininess.png`
 
 An image file that represents shininess, the more the shininess, the smaller the reflection radius/size is.
+This can be in grayscale format (1 byte per pixel).
 
 Default behavior when shininess texture is not included: Black texture (0 value).
 
@@ -126,10 +130,12 @@ File name: `brush.<image-format>`, for example `brush.png`
 An image file representing brush direction and magnitude at different points.
 The brush effect doesn't expand the reflection radius, it shrinks it in a specific direction, so try to use less shininess values in the brushed areas.
 Red represents x, Green represents y, Blue represents z.
-0 is almost -1 (-1.003921569), 128 is exactly 0, and 255 is almost 1 (0.996078431).
+0 translates to almost -1 (-1.003921569), 128 to exactly 0, and 255 to almost 1 (0.996078431).
 It is recommended to use 1 (= 128 - 127) as -1, and 255 (= 128 + 127) as 1.
 
 Default behavior when brush texture is not included: A texture filled with (128, 128, 128) or #808080 (0 vector).
+
+Note: If the brush vector at a point is defined as V, -V has the same effect as V because it's about brushing, so it can be applied both ways.
 
 ## Brush Intensity texture
 File name: `brush_intensity.<image-format>`, for example `brush_intensity.png`
@@ -148,7 +154,7 @@ File name: `config.json`
 There are these optional fields to set:
 
   - TargetVersion: The version name of the target version.
-  - Pixelated<texture-name>: Whether the pixels of a low res texture should be rendered as squares. This is the full list:
+  - Pixelated\<texture-name\>: Whether the pixels of a low res texture should be rendered as squares. This is the full list:
     - PixelatedBase
     - PixelatedReflections
     - PixelatedNormal
@@ -180,6 +186,10 @@ The blending mode used is additive, that means the resulting color in a pixel is
 Users might allow a limited number of additional layers or turn them off, so prioritize on what to put in the main layer and the additional layers.
 The main layer (rendered from the files without numbers) is always shown.
 For additional layers, the less the layer's number, the more likely it's going to be shown.
+
+# Where to share custom materials
+
+You can share your custom materials in: https://www.reddit.com/r/MaterialsLW
 
 # Changelog
 
