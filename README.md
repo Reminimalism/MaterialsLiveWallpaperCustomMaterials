@@ -83,7 +83,7 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
     The samples that are included in the app.
 
-    [Download zip (4096x4096)](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2020.08.30/DefaultMaterials.zip)
+    [Download zip (4096x4096)](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2021.08.05/DefaultMaterials.zip)
 
 # How to create a Custom Material
 
@@ -148,6 +148,8 @@ Default behavior when brush intensity texture is not included: A texture filled 
 As an example, see `CircularBrush.zip` located in `DefaultMaterials.zip` or one of `ColorfulCircularBrush_<resolution>.zip`,
 available in [samples section](#samples) and [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/).
 
+## TODO: Depth and height textures
+
 ## Config
 File name: `config.json`
 
@@ -162,6 +164,11 @@ There are these optional fields to set:
     - PixelatedBrush
     - PixelatedBrushIntensity
   - NormalizeNormal: Whether to normalize the normal map in the shader.
+  - DepthIntensity: Specifies how much movement deep points should have.
+  - HeightIntensity: Specifies how much movement high points should have.
+  - FrameWithParallaxEnabled: Specifies how much crop should be applied when there is the parallax effect.
+    - For example 0.9 means 90% of the texture shown when looked at directly. 1.0 means no crop when looked at directly.
+  - FrameWithParallaxDisabled: Like FrameWithParallaxEnabled except when there is no parallax effect.
 
 See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/blob/master/sample_config.json) as an example.
 Note that the name of this file in the zip should exactly be `config.json`.
@@ -192,6 +199,14 @@ For additional layers, the less the layer's number, the more likely it's going t
 You can share your custom materials in: https://www.reddit.com/r/MaterialsLW
 
 # Changelog
+
+- 1.0:
+  - Added depth and height texture support (parallax)
+  - Added the following config.json options:
+    - DepthIntensity
+    - HeightIntensity
+    - FrameWithParallaxEnabled
+    - FrameWithParallaxDisabled
 
 - 0.2:
   - Added layers support
