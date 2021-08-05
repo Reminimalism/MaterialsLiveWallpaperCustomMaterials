@@ -1,10 +1,14 @@
 {
-  "TargetVersion": "0.1",
+  "TargetVersion": "1.0",
   "PixelatedBase": false,
   "PixelatedReflections": false,
   "PixelatedNormal": false,
   "PixelatedShininess": false,
   "PixelatedBrush": false,
   "PixelatedBrushIntensity": false,
-  "NormalizeNormal": true
+  "NormalizeNormal": true,
+  "DepthIntensity": 0.05,
+  "HeightIntensity": 0.05,
+  "FrameWithParallaxEnabled": 0.9,
+  "FrameWithParallaxDisabled": 1.0
 }
