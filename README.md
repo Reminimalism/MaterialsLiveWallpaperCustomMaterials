@@ -201,7 +201,7 @@ You can share your custom materials in: https://www.reddit.com/r/MaterialsLW
 # Changelog
 
 - 1.0:
-  - Added depth and height texture support (parallax)
+  - Added depth and height texture support. (parallax)
   - Added the following config.json options:
     - DepthIntensity
     - HeightIntensity
@@ -209,7 +209,7 @@ You can share your custom materials in: https://www.reddit.com/r/MaterialsLW
     - FrameWithParallaxDisabled
 
 - 0.2:
-  - Added layers support
+  - Added layers support.
   - Not including the base or reflections textures results in a behavior like the missing ones are black (don't exist).
 
 - 0.1:
