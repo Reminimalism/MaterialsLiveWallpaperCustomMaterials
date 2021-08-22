@@ -148,7 +148,19 @@ Default behavior when brush intensity texture is not included: A texture filled 
 As an example, see `CircularBrush.zip` located in `DefaultMaterials.zip` or one of `ColorfulCircularBrush_<resolution>.zip`,
 available in [samples section](#samples) and [releases](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/).
 
-## TODO: Depth and height textures
+## Depth and height textures
+File names: `depth.<image-format>` and `height.<image-format>`
+
+Depth represents depth at each point and height represents height.
+0 for depth means on screen, 255 is max depth.
+0 for height means on screen, 255 is max height.
+Depth and height intensities can be set in the config file.
+It is recommended to lower FrameWithParallaxEnabled for higher intensities, unless the edges are tiled and the intensity is low enough.
+If both depth and height are present, their final values will add up.
+
+Default behavior when either of them are not included: A texture filled with 0 (black).
+
+The FrameWithParallaxDisabled setting is used from the config if neither of the depth/height textures are in the zip for any layer.
 
 ## Config
 File name: `config.json`
@@ -172,6 +184,7 @@ There are these optional fields to set:
 
 See [sample_config.json](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/blob/master/sample_config.json) as an example.
 Note that the name of this file in the zip should exactly be `config.json`.
+The values in the sample config file are the default values for the current version.
 
 # Resolutions and aspect ratios
 
