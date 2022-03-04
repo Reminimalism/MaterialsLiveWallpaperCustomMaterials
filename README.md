@@ -209,7 +209,7 @@ For additional layers, the less the layer's number, the more likely it's going t
 
 # Where to share custom materials
 
-You could share your custom materials in https://www.reddit.com/r/MaterialsLW or create an issue to include links here.
+You can create an issue to include links to pages here.
 
 # Changelog
 
