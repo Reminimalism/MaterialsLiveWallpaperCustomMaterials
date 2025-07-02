@@ -83,10 +83,13 @@ Materials that can be imported to [Materials Live Wallpaper](https://github.com/
 
     Simple carbon fiber material.
 
-    Generated using `generate_carbon_fiber.py` script.
+    Generated using `generate_carbon_fiber.py` script,
+    with PixelatedBrush in the `config.json` set to true.
+    The reason PixelatedBrush must be true is to avoid blending on the edges which causes a diagonal brush effect.
+    PixelatedNormal can also optionally be set to true but it doesn't have any noticeable effects.
 
-    [Download 1024x1024](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2025.07.01/CarbonFiber_1024x1024.zip),
-    [**Download 2048x2048**](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2025.07.01/CarbonFiber_2048x2048.zip),
+    [**Download 1024x1024**](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2025.07.01/CarbonFiber_1024x1024.zip),
+    [Download 2048x2048](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2025.07.01/CarbonFiber_2048x2048.zip),
     [Download 4096x4096](https://github.com/Reminimalism/MaterialsLiveWallpaperCustomMaterials/releases/download/v2025.07.01/CarbonFiber_4096x4096.zip)
 
 - **Default Materials**
